@@ -1,0 +1,263 @@
+body {
+    font-family: Verdana, sans-serif;
+    color: #38383f;
+}
+
+header {
+    border-radius: 0px 0px 50px 0px;
+    background-color: #38383f;
+    padding: 5px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 50xp;
+}
+
+.topnav {
+    border-radius: 50px 0px 0px 0px;
+    background-color: #ffae25;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 2;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #ffae25;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.cheatsheets {
+    display: flex;
+    flex-direction: row;
+}
+
+.column-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: #38383f;
+    order: 1;
+    width: 50%;
+}
+
+.column-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: #38383f;
+    order: 2;
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    padding: 8px;
+    background-color: #38383f93;
+    color: white;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+.icon-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.html {
+    display: flex;
+    order: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.CSS {
+    display: flex;
+    order: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.Javascript {
+    display: flex;
+    order: 3;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.userful-cheats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Cheatsheet {
+    display: flex;
+    order: 4;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
+
+.Useful {
+    display: flex;
+    order: 5;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a:link {
+    color: #ffae25;
+    background-color: transparent;
+}
+
+a:visited {
+    color: #38383f;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #38383f93;
+    background-color: transparent;
+}
+
+.html{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Information{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: #38383f;
+    order: 1;
+    width: 75%;
+}
+
+.Contents{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: #38383f;
+    order: 2;
+    width: 15%;
+}
+
+footer {
+    border-radius: 50px 50px 0px 0px;
+    background-color: #38383f;
+    padding: 30px;
+    color: white;
+    margin-top: 25px;
+}
+
+.row div {
+    padding: 10px;
+    border: 1px solid #38383f;
+    height: 60px;
+    width: 60px;
+    float: left;
+    color: #ffae25;
+    text-align: center;
+    font-size: 300%;
+}
+.row {
+    clear: both;
+}
+
+.buttons-container{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.buttons-container img{
+    width: 100%;
+    height: auto;
+}
+
+.buttons-container .btn{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    ttransform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: #ffae25;
+    font-size: 20px;
+    padding: 16px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.buttons-container .btn:hover {
+    background-color: #38383f;
+    color: #ffae25;
+  }
+
+
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container-cheatsheets1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container-cheatsheets2{
+    display: flex;
+    flex-direction: column;
+  }
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}

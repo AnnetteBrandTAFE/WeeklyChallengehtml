@@ -1,0 +1,32 @@
+{
+  "name": "weeklychallengehtml",
+  "version": "1.0.0",
+  "description": "my website using express, html, css and javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnetteBrandTAFE/WeeklyChallengehtml.git"
+  },
+  "keywords": [
+    "Service",
+    "NSW",
+    "TAFE",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Education"
+  ],
+  "author": "Annette Brand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnetteBrandTAFE/WeeklyChallengehtml/issues"
+  },
+  "homepage": "https://github.com/AnnetteBrandTAFE/WeeklyChallengehtml#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
+}

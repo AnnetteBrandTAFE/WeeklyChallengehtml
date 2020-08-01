@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+    <link rel="stylesheet" type="text/css" href="mystyles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><i class="material-icons">home</i></a>
+        <a href="useful-links.html">Useful Links</a>
+        <a href="cheatsheets.html">Cheatsheets</a>
+        <a href="javascript-revision.html">JavaScript</a>
+        <a href="html-revision.html">html</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <header>
+        <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+        <h1>html</h1>
+        <h3>Repository for all wisdom</h3>
+    </header>
+
+    <div class="html">
+        <div class="Information">
+            <h3 id="Chapter 1">Chapter 1: Introduciton to HTML</h3>
+            <p>HTML is the standard markup language for creating Web pages. </p>
+            <h4>What is an HTML Element?</h4>
+            <p>An HTML element is defined by a start tag, some content, and an end tag:
+                <b style="color: #ffae25;">&#60tagname&#62</style></b>Content goes here...
+                <b style="color: #ffae25;">&#60/tagname&#62 </style></b>
+            </p><br>
+            <table>
+                <tr>
+                    <th>Start tag</th>
+                    <th>Element content</th>
+                    <th>End tag</th>
+
+                </tr>
+                <tr>
+                    <td>&#60h1&#62</td>
+                    <td>My First Heading</td>
+                    <td>&#60/h1&#62</td>
+                </tr>
+                <tr>
+                    <td>&#60p&#62</td>
+                    <td>My first paragraph</td>
+                    <td>&#60/p&#62</td>
+                </tr>
+                <tr>
+                    <td>&#60br&#62</td>
+                    <td><i>none</i></td>
+                    <td><i>none</i></td>
+                </tr>
+            </table>
+            <p style="background-color: #ffae25;"><b>Note:</b>Some HTML elements have no content (like the &#60br&#62
+                element). These elements are called empty elements. Empty elements do not have an end tag!</p> <br>
+            <h4>Nested HTML Elements</h4>
+            <p>HTML elements can be nested (this means that elements can contain other elements).<br>
+                All HTML documents consist of nested HTML elements.</p>
+            <h4>Never Skip the End Tag</h4>
+            <p>Some HTML elements will display correctly, even if you forget the end tag.<br>
+                <b> However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</b>
+            </p>
+            <h4>Empty HTML Elements</h4>
+            <p>HTML elements with no content are called empty elements.<br>
+                The <b style="color: #ffae25;">&#60br&#62</style></b>tag defines a line break, and is an empty element
+                without a closing tag</p>
+            <h4>HTML is Not Case Sensitive</h4>
+            <p>HTML tags are not case sensitive: <b style="color: #ffae25;">&#60P&#62</style></b> means the same as <b
+                    style="color: #ffae25;">&#60p&#62.</style></b></p>
+
+            <img src="./images/body.jpg" alt="figures showing the difference between html, css and js"
+                style="width:500px; height:500px; justify-content: center;">
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 2">Chapter 2: Attributes</h3>
+            <p>HTML attributes provide additional information about HTML elements.</p>
+            <ul>
+                <li>All HTML elements can have <b>attributes</b></li>
+                <li>Attributes provide <b>additional information</b> about elements</li>
+                <li>Attributes are always specified in the <b>start tag</b></li>
+                <li>Attributes usually come in name/value pairs like: <b>name="value"</b></li>
+            </ul>
+            <h4>The href Attribute</h4>
+            <p>the <b style="color: #ffae25;"> &#60a&#62 </style></b>tag defines a hyperlink. Yje href attributes
+                specifies the URL of the page the link goes
+                to. For more information please refer to <a href="#Chapter 6"> Chapter 6</a></p>
+            <h4>The src Attribute</h4>
+            <p> the <b style="color: #ffae25;"> &#60img&#62 </style></b> tag is used to embed an image in an HTML page.
+                The src attribute specifies the path to
+                the image to be displayed</p>
+            <h4>The width and height Attributes</h4>
+            <p> the <b style="color: #ffae25;"> &#60img&#62 </style></b> tag should also contain the width and height
+                attributes, which specifies the width and
+                height of the image (in pixels)</p>
+            <h4>The alt Attribute</h4>
+            <p>The required alt attribute for the <b style="color: #ffae25;"> &#60img&#62 </style></b> tag specifies an
+                alternate text for an image, if the image for
+                some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute,
+                or if the user uses a screen reader.</p>
+            <h4>The style Attribute</h4>
+            <p>The<b style="color: #ffae25;"> style</style></b> attribute is used to add styles to an element, such as
+                color, font, size, and more.For more information please refer to <a href="#Chapter 6"> Chapter 5</a></p>
+            <h4>The lang Attribute</h4>
+            <p>You should always include the lang attribute inside the <b style="color: #ffae25;"> &#60html&#62 </style>
+                </b> tag, to declare the language of the Web page. This is meant to assist search engines and
+                browsers.<br>
+                To specify english <b style="color: #ffae25;"> &#60html lang="en"&#62 </style></b></p><br>
+            <p>Country codes can also be added to the language code in the lang attribute. So, the first two characters
+                define the language of the HTML page, and the last two characters define the country.<br>
+                America is America so you would use the code <b style="color: #ffae25;"> &#60html lang="en-US"&#62
+                    </style></b></p>
+            <h4>The title Attribute</h4>
+            <p>The <b style="color: #ffae25;">title </style></b>attribute defines some extra information about an
+                element.<br>
+                The value of the title attribute will be displayed as a tooltip when you mouse over the element.<br>
+                An example of this would be <b style="color: #ffae25;"> &#60p title="I'm a tooltip"&#62 This is a
+                    paragraph&#60/p&#62 </style>
+                </b></p>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 3">Chapter 3: Headings</h3>
+            <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+            <h1 style="color: #ffae25;">Heading 1</h1>
+            <h2 style="color: #ffae25;">Heading 2</h2>
+            <h3 style="color: #ffae25;">Heading 3</h3>
+            <h4 style="color: #ffae25;">Heading 4</h4>
+            <h5 style="color: #ffae25;">Heading 5</h5>
+            <h6 style="color: #ffae25;">Heading 6</h6>
+            <h4>HTML Headings</h4>
+            <p>HTML headings are defined with the <b style="color: #ffae25;"> &#60h1&#62 </style></b> to
+                <b style="color: #ffae25;"> &#60h6&#62 </style></b> tags.<br>
+                <b style="color: #ffae25;"> &#60h1&#62 </style></b> defines the most important heading.
+                <b style="color: #ffae25;"> &#60h6&#62 </style></b> defines the least important heading.</p>
+            <h4>Headings Are Important</h4>
+            <p>Search engines use the headings to index the structure and content of your web pages.<br>
+                Users often skim a page by its headings. It is important to use headings to show the document
+                structure.<br>
+                <b style="color: #ffae25;"> &#60h1&#62 </style></b> headings should be used for main headings, followed
+                by <b style="color: #ffae25;"> &#60h2&#62 </style></b> headings, then the less important
+                <b style="color: #ffae25;"> &#60h3&#62 </style></b>, and so on.</p>
+            <h4>Bigger Headings</h4>
+            <p>Each HTML heading has a default size. However, you can specify the size for any heading with the <b
+                    style="color: #ffae25;"> style</style></b>
+                attribute, using the CSS <b style="color: #ffae25;"> font-size </style></b> property:<br>
+                Example <b style="color: #ffae25;"> &#60h1 style="front-size:60px;"&#62 Heading 1 &#60h1&#62</style></b>
+            </p>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 4">Chapter 4: Paragraphs</h3>
+            <p>A paragraph always starts on a new line, and is usually a block of text.</p>
+            <h4>HTML Paragraphs</h4>
+            <p>The HTML <b style="color: #ffae25;"> &#60p&#62 </style></b> element defines a paragraph.<br>
+
+                A paragraph always starts on a new line, and browsers automatically add some white space (a margin)
+                before and after a paragraph.</p>
+            <h4>HTML Display</h4>
+            <p>You cannot be sure how HTML will be displayed.<br>
+                Large or small screens, and resized windows will create different results.<br>
+                With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.<br>
+                The browser will automatically remove any extra spaces and lines when the page is displayed.</p>
+            <h4>HTML Horizontal Rules</h4>
+            <p>The <b style="color: #ffae25;"> &#60hr&#62 </style></b> tag defines a thematic break in an HTML page, and
+                is most often displayed as a horizontal rule.<br>
+                The <b style="color: #ffae25;"> &#60hr&#62 </style></b> element is used to separate content (or define a
+                change) in an HTML page<br>
+                The <b style="color: #ffae25;"> &#60hr&#62 </style></b> tag is an empty tag, which means that it has no
+                end tag.</p>
+            <h4>HTML Line Breaks</h4>
+            <p>The HTML <b style="color: #ffae25;"> &#60br&#62 </style></b> element defines a line break.<br>
+                Use <b style="color: #ffae25;"> &#60br&#62 </style></b> if you want a line break (a new line) without
+                starting a new paragraph</p>
+            <h4>The HTML <b style="color: #ffae25;"> &#60pre&#62 </style></b> Element</h4>
+            <p>The HTML <b style="color: #ffae25;"> &#60pre&#62 </style></b> element defines preformatted text.<br>
+                The text inside a <b style="color: #ffae25;"> &#60pre&#62 </style></b>
+            element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.</p>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 5">Chapter 5: Text Formatting</h3>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 6">Chapter 6: Hyperlinks</h3>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 7">Chapter 7: Lists</h3>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 8">Chapter 8: Tables</h3>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 9">Chapter 9: Comments</h3>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 10">Chapter 10: Classes and IDs</h3>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 11">Chapter 11: Linking</h3>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 12">Chapter 12: Adding JavaScript Code in HTML</h3>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 13">Chapter 13: Include HTML with CSS</h3>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+            <h3 id="Chapter 14">Chapter 14: Navagiation Bars</h3>
+            <p><a href="#Contents"> Back to the top</a></p>
+
+        </div>
+        <div class="Contents">
+            <h3 id="Contents">Contents</h3>
+            <ol>
+                <il><a href="#Chapter 1">Chapter 1: Introduciton to HTML</a></il><br>
+                <il><a href="#Chapter 2">Chapter 2: Attributes</a></il><br>
+                <il><a href="#Chapter 3">Chapter 3: Headings</a></il><br>
+                <il><a href="#Chapter 4">Chapter 4: Paragraphs</a></il><br>
+                <il><a href="#Chapter 5">Chapter 5: Text Formatting</a></il><br>
+                <il><a href="#Chapter 6">Chapter 6: Hyperlinks</a></il><br>
+                <il><a href="#Chapter 7">Chapter 7: Lists</a></il><br>
+                <il><a href="#Chapter 8">Chapter 8: Tables</a></il><br>
+                <il><a href="#Chapter 9">Chapter 9: Comments</a></il><br>
+                <il><a href="#Chapter 10">Chapter 10: Classes and IDs</a></il><br>
+                <il><a href="#Chapter 11">Chapter 11: Linking</a></il><br>
+                <il><a href="#Chapter 12">Chapter 12: Adding JavaScript Code in HTML</a></il><br>
+                <il><a href="#Chapter 13">Chapter 13: Include HTML with CSS</a></il><br>
+                <il><a href="#Chapter 14">Chapter 14: Navagiation Bars</a></il><br>
+            </ol>
+
+
+
+        </div>
+    </div>
+
+    <footer>
+        <h4><b>DISCLAIMER:</b> I hereby declare that I do not <b>own the rights</b> to this information. All rights
+            belong to the owner. No Copyright Infringement Intended.</h4>
+    </footer>
+    <link rel="index.html" type="text/javascript" href="/js-index.js" />
+
+</body>
+
+</html>
